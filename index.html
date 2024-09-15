@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+
+    <!-- google font CDN -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&family=Roboto:wght@400;700&family=Sahitya&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- local CSS file(s) -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <img src="img/logo2.png" class="logo" alt="" />
+        <ul class="links-container">
+            <li class="link-items"><a href="#hero-section" class="links">Home</a></li>
+            <li class="link-items"><a href="#project-section" class="links">Projects</a></li>
+            <li class="link-items"><a href="#about-section" class="links">about</a></li>
+            <li class="link-items"><a href="#contact-sections" class="links">Contact</a></li>
+        </ul>
+    <!-- toggle btn -->
+    <div class="toggle-btn active">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+    <!-- hero -->
+    <main id="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-headline">Hello there <br />
+            Aditya Here</h1>
+            <p class="hero-secondary-line">a fullstack web developer<br>and a curious soul</p>
+            <a href="#contact-section" class="btn">Let's chat</a>
+        </div>
+    </main>
+</header>
+<!-- project section -->
+<section id="project-section">
+    <h1 class="section-title" data-text="works">Projects</h1>
+    <p class="section-info">Few of my projects that i have done recentely</p>
+
+    <!-- fillter -->
+    <div class="filters">
+        <button class="filter-btn active"data-filter-value="all">all</button>
+        <button class="filter-btn" data-filter-value="frontend">frontend</button>
+        <button class="filter-btn" data-filter-value="javascript">javascript</button>
+        <button class="filter-btn" data-filter-value="react">react js</button>
+        <button class="filter-btn" data-filter-value="backend">backend</button>
+        <button class="filter-btn" data-filter-value="fullstack">Fullstack</button>
+    </div>
+    <!-- pro gallery -->
+    <div class="project-gallery">
+       
+    </div> 
+<!-- project details -->
+<div id="project-info">
+<div class="project-details">
+    <img src="img/project-1.png" class="image" alt="">
+    <h2 class="name">Project name</h2>
+    <p class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis reiciendis quos minima laboriosam eos consectetur nesciunt maiores praesentium delectus voluptatum. Minus sit unde eaque iusto consequuntur esse hic earum labore!</p>
+    <div class="btn-grps">
+        <a href="#" class="btn light" id="live-btn">see live</a>
+        <a href="#" class="btn transparent" id="github-btn">github repo</a>
+
+    </div>
+</div>
+<div class="coding-language-breakdown">
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/html.png" class="icon" alt="">
+       <p class="name">HTML</p> 
+    </div>
+    <div class="progress-track" data-name="html">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/css.png" class="icon" alt="">
+       <p class="name">CSS</p> 
+    </div>
+    <div class="progress-track" data-name="css">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/javascript.png" class="icon" alt="">
+       <p class="name">JavaScript</p> 
+    </div>
+    <div class="progress-track" data-name="javascript">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/reactjs.png" class="icon" alt="">
+       <p class="name">React JS</p> 
+    </div>
+    <div class="progress-track" data-name="reactjs">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/nodejs.png" class="icon" alt="">
+       <p class="name">Node JS</p> 
+    </div>
+    <div class="progress-track" data-name="nodejs">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/database.png" class="icon" alt="">
+       
+       <p class="name">SQL / NO SQL</p> 
+    </div>
+    <div class="progress-track" data-name="database">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/tailwind.png" class="icon" alt="">
+       <p class="name">Tailwind</p> 
+    </div>
+    <div class="progress-track" data-name="tailind">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+<div class="cl-card ">
+    <div class="language">
+       <img src="img/other.png" class="icon" alt="">
+       <p class="name">Other</p> 
+    </div>
+    <div class="progress-track" data-name="other">
+        <div class="progress">
+
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- about -->
+<section id="about-section">
+   <h1 class="section-title" data-text="resume">About</h1> 
+   <p class="section-info">My skills,experiences and education</p>
+   <div class="about-me-container">
+    <div class="about-me-image-container">
+        <img src="img/profile1.jpg" class="about-image" alt="" >
+        <a href="img/resume'24.pdf" class="btn light download-btn" download>Download resume</a>
+
+    </div>
+    <div class="personal-info">
+        <h2 class="title">Personal info</h2>
+        <p><span>Name :</span> Aditya Mishra</p>
+        <p><span>Age :</span>20 years</p>
+        <p><span>Nationality :</span> Indian</p>
+        <p><span>Freelance :</span> Available</p>
+        <p><span>Email :</span>mrnerd343@gmail.com</p>
+        <p><span>Instagram :</span>@mr0_nerd</p>
+        <p><span>Connect with me</span></p>
+        <div class="social-links-container">
+            <a href="https://www.instagram.com/mr0_nerd?igsh=MjMxb2ppcjZqcHly" class="social-links"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61553689727006" class="social-links"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/Aditya_1492?t=HQAKkphSWawOUrKJtEkpRg&s=08" class="social-links"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-mishra-2b2ab8323" class="social-links"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mro-nerd" class="social-links"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+   </div>
+
+   <div class="skill">
+    <h2 class="title">Skills</h2>
+
+    <div class="skill-container">
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-image" alt="">
+            <p class="skill-name">HTML</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/css.png" class="skill-image" alt="">
+            <p class="skill-name">CSS</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/javascript.png" class="skill-image" alt="">
+            <p class="skill-name">JavaScript</p>
+        </div>
+       
+        <div class="skill-card">
+            <img src="img/reactjs.png" class="skill-image" alt="">
+            <p class="skill-name">React JS</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/nodejs.png" class="skill-image" alt="">
+            <p class="skill-name">Node JS</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/tailwind.png" class="skill-image" alt="">
+            <p class="skill-name">Tailwind</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/postgres.png" class="skill-image" alt="">
+            <p class="skill-name">Postgres</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/mongo.png" class="skill-image" alt="">
+            <p class="skill-name">MongoDB</p>
+        </div>
+        <div class="skill-card">
+            <img src="img/firebase.png" class="skill-image" alt="">
+            <p class="skill-name">Firebase</p>
+        </div>
+    </div>
+
+   </div>
+   <!-- education -->
+   <div class="edu-exp">
+    <h2 class="title">Education & Experience</h2>
+    <div class="edu-exp-container">
+        <div class="edu-exp-card">
+            <i class="fa-solid fa-suitcase card-icon"></i>
+            <span class="time">2022-PRESENT</span>
+            <h3 class="card-title">Web Developer </h3>
+            <p class="card-info">My journey in web development began during my first semester of college, and since then, I've passionately pursued projects to hone my skills. I am proud to say that I have achieved mastery in the MERN (MongoDB, Express.js, React, Node.js) stack.My portfolio includes projects that demonstrate my ability to create responsive and dynamic web applications, reflecting my dedication to continuous learning and improvement in the ever-evolving field of web development. </p>
+        </div>
+        <div class="edu-exp-card">
+            <i class="fa-solid fa-suitcase card-icon"></i>
+            <span class="time">2022-PRESENT</span>
+            <h3 class="card-title">Coder</h3>
+            <p class="card-info">Apart from web development ,I have a solid understanding of low-level programming with C, am proficient in object-oriented programming and algorithm design using C++, and have strong skills in scripting, data analysis, and web development with Python.</p>
+        </div>
+        <div class="edu-exp-card">
+            <i class="fa-solid fa-graduation-cap card-icon"></i>
+            <span class="time">2022-PRESENT</span>
+            <h3 class="card-title">UnderGrad - <span>Laxmi Narain College Of Technology Science,Bhopal</span></h3>
+            <p class="card-info">I am currently pursuing my Bachelor of Technology (B.Tech) in Computer Science at LNCTS college in Bhopal,Madhya Pradesh. I anticipate completing my degree in 2026. Throughout my academic journey, I've delved into various subjects which have equipped me with a strong foundation in computer science principles.
+                </p>
+        </div>
+        <div class="edu-exp-card">
+            <i class="fa-solid fa-graduation-cap card-icon"></i>
+            <span class="time">2022</span>
+            <h3 class="card-title">High School - <span>Takshashila Public School,Shahjahanpur,U.p</span></h3>
+            <p class="card-info">I have done my schooling from Takshashila Public School under CBSE board in Maths stream from my hometown in Shahjahanpur, Uttar-Pradesh</p>
+        </div>
+
+    </div>
+   </div>
+</section>
+
+<!-- contact -->
+
+
+<section id="contact-section">
+<h1 class="section-title" data-text="contact">Lets's Chat</h1>
+<p class="section-info">You can fill this form to contact me about any questions you have</p>
+<div class="contact-container">
+   <div class="contact-details">
+    <div class="contact-card">
+        <i class="fa-solid fa-location-dot card-icon"></i>
+        <span class="card-title">Address</span>
+        <p class="card-info">
+            157-C , Indrapuri sector-c , Bhopal , Madhya Pradesh
+        </p>
+    </div>
+    <div class="contact-card">
+        <i class="fa-solid fa-envelope card-icon"></i>
+        <span class="card-title">MailMe</span>
+        <p class="card-info">
+            mrnerd343@gmail.com
+            adpcmecs1492@gmail.com
+        </p>
+    </div>
+    <div class="social-links-container">
+        <a href="https://www.instagram.com/mr0_nerd?igsh=MjMxb2ppcjZqcHly" class="social-links"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61553689727006" class="social-links"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/Aditya_1492?t=HQAKkphSWawOUrKJtEkpRg&s=08" class="social-links"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/aditya-mishra-2b2ab8323" class="social-links"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mro-nerd" class="social-links"><i class="fa-brands fa-github"></i></a>
+    </div>
+   </div> 
+   <!-- cotact-form-->
+   <div class="contact-form">
+    <form>
+        <div class="name-email-input">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            
+        </div>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn light" type="submit">Send Message</button>
+    </form>
+
+   </div>
+</div>
+
+</section>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@latest/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+      }
+    }
+  </script>
+<script type='module' src="three.js" ></script>
+
+<script src="projects.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
