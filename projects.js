@@ -3,6 +3,24 @@
 let projects = [
     
     {
+        name: 'HirePortal',
+        about: 'Engineered a enterprise-ready job portal using a scalable microservices architecture with decoupled services (Auth,User,Jobs, Payments, AI Utilities) and then deployed on AWS via Docker.Integrated Google Gemini AI for automated resume analysis, ATS scoring, and personalized career roadmaps.Implemented Kafka-powered asynchronous email notifications and Redis-backed secure password reset flows.Enabled premium subscription model with Razorpay integration and Cloudinary-based storage for resumes and profile images.',
+        tags:  '#fullstack, #backend, #javascript',
+        live: 'https://shorturl.at/lo9Uf',
+        github: 'https://github.com/mro-nerd/Job-portal.git',
+        image: 'img/pro-0.png',
+        languages: {
+            html: '2%',
+            css: '2%',
+            javascript: '90%',
+            reactjs: '55%',
+            nodejs: '70%',
+            database: '40%',
+            tailwind: '20%',
+            other: '5%',
+        }
+    },
+    {
         name: 'MERN Estate',
         about: 'This project is designed to provide a comprehensive solution for managing real estate listings, featuring user authentication, Google sign-in, image storage via Firebase, profile updates, listing creation and management, advanced search capabilities, and a communication channel for user queries.',
         tags:  '#fullstack, #backend, #javascript',
@@ -17,6 +35,24 @@ let projects = [
             nodejs: '60%',
             database: '40%',
             tailwind: '40%',
+            other: '5%',
+        }
+    },
+    {
+        name: 'Database Backup Utility CLI',
+        about: 'Developed a pluggable CLI to automate backup, verification, and restoration across various database engines. Implemented an automated retention policy (Count/Age-based) and integrated a Cron-based scheduler.Ensured 100% data integrity by building a verification module to compute checksums and compare row counts.Added a lightweight Express-based Web UI for visual backup management and real-time monitoring.',
+        tags:  '#backend, #javascript',
+        live: 'https://github.com/mro-nerd/DB-Backup-Utility-CLI.git',
+        github: 'https://github.com/mro-nerd/DB-Backup-Utility-CLI.git',
+        image: 'img/pro-1.5.png',
+        languages: {
+            html: '20%',
+            css: '20%',
+            javascript: '90%',
+            reactjs: '0%',
+            nodejs: '80%',
+            database: '60%',
+            tailwind: '4%',
             other: '5%',
         }
     },
