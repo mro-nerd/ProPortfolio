@@ -81,9 +81,30 @@ window.addEventListener('scroll',()=>{
 
 const toggleBtn=document.querySelector('.toggle-btn');
 const linksContainer=document.querySelector('.links-container');
+const navLinks = document.querySelectorAll('.links');
+const body = document.body;
 
 toggleBtn.addEventListener('click',()=>{
     toggleBtn.classList.toggle('active');
     linksContainer.classList.toggle('active');
+    body.classList.toggle('sidebar-open');
 })
+
+// Close sidebar when clicking on a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        toggleBtn.classList.remove('active');
+        linksContainer.classList.remove('active');
+        body.classList.remove('sidebar-open');
+    });
+});
+
+// Close sidebar when clicking outside (on overlay)
+document.addEventListener('click', (e) => {
+    if (!linksContainer.contains(e.target) && !toggleBtn.contains(e.target) && linksContainer.classList.contains('active')) {
+        toggleBtn.classList.remove('active');
+        linksContainer.classList.remove('active');
+        body.classList.remove('sidebar-open');
+    }
+});
 
