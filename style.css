@@ -99,6 +99,8 @@ nav.bg{
     width: 100% !important;
     height: 100% !important;
     z-index: 1;
+    pointer-events: none;
+    touch-action: none;
 }
 
 .hero-content{

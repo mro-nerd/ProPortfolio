@@ -9,6 +9,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.domElement.style.pointerEvents = 'none'; // Prevent canvas from blocking scroll
 // document.body.appendChild( renderer.domElement );
 
 const heroSection = document.querySelector('#hero-section');
@@ -38,6 +39,21 @@ loader.load( './scene.gltf', function ( gltf ) {
 
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.enableZoom = false;
+controls.enablePan = false;
+
+// Disable controls on mobile/touch devices
+if (window.innerWidth <= 992) {
+    controls.enabled = false;
+}
+
+// Disable controls when resizing to mobile
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 992) {
+        controls.enabled = false;
+    } else {
+        controls.enabled = true;
+    }
+});
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 const light = new THREE.AmbientLight(0x404040);
